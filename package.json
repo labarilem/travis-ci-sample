@@ -7,6 +7,8 @@
     "jshint": "^2.6.0"
   },
   "scripts": {
-    "test": "jshint hello.js"
+    "setup": "npm i && echo custom_install",
+    "test": "jshint hello.js",
+    "ci": "npm run test && echo custom_test"
   }
 }
