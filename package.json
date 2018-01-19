@@ -1,13 +1,13 @@
 {
   "name": "travis-ci-sample",
-  "description": "Simple Travis-CI check for JSHint (Code Linting)",
+  "description": "Just an hello world. I am using this package to get familiar with Travis CI.",
   "author": "labarilem",
   "repository": {
     "type": "git",
     "url": "https://github.com/labarilem/travis-ci-sample"
   },
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "main.js",
   "readme": "README.md",
   "devDependencies": {
