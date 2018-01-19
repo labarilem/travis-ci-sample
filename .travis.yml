@@ -5,3 +5,13 @@ install:
   - npm run setup
 script:
   - npm run ci
+before_deploy:
+  - npm run deploy.before
+deploy:
+  provider: npm
+  email: $NPM_REG_EMAIL
+  api_key: $NPM_REG_TOKEN
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master

@@ -2,13 +2,23 @@
   "name": "travis-ci-sample",
   "description": "Simple Travis-CI check for JSHint (Code Linting)",
   "author": "labarilem",
-  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labarilem/travis-ci-sample"
+  },
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "main.js",
+  "readme": "README.md",
   "devDependencies": {
+    "cpr": "^3.0.1",
     "jshint": "^2.6.0"
   },
   "scripts": {
-    "setup": "npm i && echo custom_install",
-    "test": "jshint hello.js",
-    "ci": "npm run test && echo custom_test"
+    "setup": "npm i",
+    "build": "mkdir dist && cpr main.js dist/main.js && cpr package.json dist/package.json",
+    "test": "jshint main.js",
+    "ci": "npm run build && npm run test",
+    "deploy.before": "cd dist"
   }
 }
