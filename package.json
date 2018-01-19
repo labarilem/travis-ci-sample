@@ -7,7 +7,7 @@
     "url": "https://github.com/labarilem/travis-ci-sample"
   },
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "main.js",
   "readme": "README.md",
   "devDependencies": {
