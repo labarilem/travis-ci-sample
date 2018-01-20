@@ -1,13 +1,17 @@
 {
   "name": "travis-ci-sample",
-  "description": "Simple Travis-CI check for JSHint (Code Linting)",
+  "description": "I am using this repository to get familiar with Travis CI.",
+  "keywords": [
+    "travis",
+    "sample"
+  ],
   "author": "labarilem",
   "repository": {
     "type": "git",
     "url": "https://github.com/labarilem/travis-ci-sample"
   },
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "main": "main.js",
   "readme": "README.md",
   "devDependencies": {
@@ -16,8 +20,8 @@
   },
   "scripts": {
     "setup": "npm i",
-    "build": "mkdir dist && cpr main.js dist/main.js && cpr package.json dist/package.json",
-    "test": "jshint main.js",
+    "build": "node build.js",
+    "test": "jshint src/main.js",
     "ci": "npm run build && npm run test",
     "deploy.before": "cd dist"
   }
