@@ -2,12 +2,6 @@ var path = require('path');
 var cpr = require('cpr');
 var fs = require('fs');
 
-// testing env var
-var testVar = process.env.TEST_VAR;
-console.log('***************************************');
-console.log(testVar);
-console.log('***************************************');
-
 // settings
 var distDirPath = 'dist';
 var toCopyInDistDir = [
