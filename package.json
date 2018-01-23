@@ -11,8 +11,8 @@
     "url": "https://github.com/labarilem/travis-ci-sample"
   },
   "license": "MIT",
-  "version": "0.0.6",
-  "main": "main.js",
+  "version": "0.0.7",
+  "main": "dist/main.js",
   "readme": "README.md",
   "devDependencies": {
     "cpr": "^3.0.1",
@@ -22,7 +22,6 @@
     "setup": "npm i",
     "build": "node build.js",
     "test": "jshint src/main.js",
-    "ci": "npm run build && npm run test",
-    "ci.after": "cd ./dist"
+    "ci": "npm run build && npm run test"
   }
 }

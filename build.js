@@ -5,9 +5,7 @@ var fs = require('fs');
 // settings
 var distDirPath = 'dist';
 var toCopyInDistDir = [
-  'src/main.js',
-  'package.json',
-  'README.md'
+  'src/main.js'
 ];
 
 // creting dist dir if it does not exist
