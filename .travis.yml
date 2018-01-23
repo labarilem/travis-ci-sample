@@ -5,8 +5,8 @@ install:
   - npm run setup
 script:
   - npm run ci
-before_deploy:
-  - npm run deploy.before
+after_script:
+  - npm run ci.after
 deploy:
   provider: npm
   email: $NPM_REG_EMAIL

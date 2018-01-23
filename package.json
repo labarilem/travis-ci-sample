@@ -23,6 +23,6 @@
     "build": "node build.js",
     "test": "jshint src/main.js",
     "ci": "npm run build && npm run test",
-    "deploy.before": "dir && cd ./dist && dir"
+    "ci.after": "cd ./dist"
   }
 }
