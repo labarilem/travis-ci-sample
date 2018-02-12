@@ -1,5 +1,6 @@
 # travis-ci-sample
 [![Build Status](https://travis-ci.org/labarilem/travis-ci-sample.svg?branch=develop)](https://travis-ci.org/labarilem/travis-ci-sample)
+[![Known Vulnerabilities](https://snyk.io/test/github/labarilem/travis-ci-sample/badge.svg?targetFile=package.json)](https://snyk.io/test/github/labarilem/travis-ci-sample?targetFile=package.json)
 
 Example of a Javascript package project using Travis CI.
 
